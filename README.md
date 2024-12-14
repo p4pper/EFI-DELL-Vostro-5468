@@ -60,14 +60,14 @@ I upgraded my RAM from 8GB to 12GB
 You will need to spoof the Intel HD 620 device-id  
 ![Screenshot 2024-12-02 at 8 26 23 PM](https://github.com/user-attachments/assets/17873ed0-5e1a-47f9-b1b9-7dc501bd9e2c)  
 
-***Additional Information***
+***Additional Information***.  
 In ``Booter -> Quirks``:   
   Enable ``AllowRelocationBlock``, ``SyncRuntimePermissions`` and ``EnableWriteUnprotector`` otherwise boot will fail   
 Fixed bluetooth by Enabling HashServices  
 Audio Layout is 21, ALC256    
 SMBios is MacBookPro16,2 
 
-**Updating from Ventura to Sonoma or later?**
+**Updating from Ventura to Sonoma or later?**.  
 Ensure you enable the quirks i've mentioned first, then disable SecureBootModel in config.plist by changing it to ``Disabled``   
 Clear your NVRAM using ResetNVRAMEntry.efi   
 Boot to your macOS and re-run the Sonoma or later installer   
